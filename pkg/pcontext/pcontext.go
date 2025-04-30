@@ -1,7 +1,7 @@
 package pcontext
 
 import (
-	"base_frame/internal/repo/models"
+	"IM/internal/repo/models"
 	"context"
 	"errors"
 	"github.com/gin-gonic/gin"

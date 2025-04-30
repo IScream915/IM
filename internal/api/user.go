@@ -1,10 +1,10 @@
 package api
 
 import (
-	"base_frame/internal/dto"
-	"base_frame/internal/services"
-	"base_frame/pkg/pcontext"
-	"base_frame/pkg/response"
+	"IM/internal/dto"
+	"IM/internal/services"
+	"IM/pkg/pcontext"
+	"IM/pkg/response"
 	"github.com/gin-gonic/gin"
 )
 

@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"base_frame/internal/repo"
-	"base_frame/pkg/pcontext"
+	"IM/internal/repo"
+	"IM/pkg/pcontext"
 	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"

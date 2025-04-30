@@ -1,16 +1,16 @@
 package internal
 
 import (
-	"base_frame/global"
-	"base_frame/internal/api"
-	"base_frame/internal/middleware"
-	"base_frame/internal/repo"
-	"base_frame/internal/repo/models"
-	"base_frame/internal/services"
-	"base_frame/pkg/common/config"
-	"base_frame/pkg/db/mysqlutil"
-	"base_frame/pkg/db/redisutil"
-	"base_frame/pkg/validation"
+	"IM/global"
+	"IM/internal/api"
+	"IM/internal/middleware"
+	"IM/internal/repo"
+	"IM/internal/repo/models"
+	"IM/internal/services"
+	"IM/pkg/common/config"
+	"IM/pkg/db/mysqlutil"
+	"IM/pkg/db/redisutil"
+	"IM/pkg/validation"
 	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"
@@ -79,7 +79,7 @@ func Start(ctx context.Context, config *config.Config) error {
 		injectRepo(),
 		fx.Invoke(func(db *gorm.DB) {
 			//CREATE DATABASE IF NOT EXISTS {{DB}};
-			_ = db.AutoMigrate(models.User{})
+			_ = db.AutoMigrate(models.User{}, models.FriendShip{})
 		}),
 		injectService(),
 		injectApi(),

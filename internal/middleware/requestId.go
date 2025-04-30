@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"base_frame/pkg/constant"
+	"IM/pkg/constant"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 )

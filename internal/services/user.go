@@ -1,12 +1,12 @@
 package services
 
 import (
-	"base_frame/global"
-	"base_frame/internal/dto"
-	"base_frame/internal/repo"
-	"base_frame/internal/repo/models"
-	"base_frame/pkg/email"
-	"base_frame/pkg/pcontext"
+	"IM/global"
+	"IM/internal/dto"
+	"IM/internal/repo"
+	"IM/internal/repo/models"
+	"IM/pkg/email"
+	"IM/pkg/pcontext"
 	"context"
 	"errors"
 	"fmt"

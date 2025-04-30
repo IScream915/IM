@@ -1,7 +1,7 @@
 package repo
 
 import (
-	"base_frame/internal/repo/models"
+	"IM/internal/repo/models"
 	"context"
 	"gorm.io/gorm"
 )

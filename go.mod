@@ -1,4 +1,4 @@
-module base_frame
+module IM
 
 go 1.24.0
 
