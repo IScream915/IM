@@ -135,6 +135,7 @@ func injectRepo() fx.Option {
 	return fx.Provide(
 		repo.NewUserToken,
 		repo.NewUser,
+		repo.NewFriendShip,
 	)
 }
 
