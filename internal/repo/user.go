@@ -36,7 +36,7 @@ func (obj *user) Update(ctx context.Context, user *models.User) error {
 	// 使用Updates更新非零字段的写法
 	// 这里当user包函主键的时候可以省略Where不写(这里的包含一定要是显式的包含)
 	// 这里需要特别注意的是Updates函数必须使用Model函数来进行操作对象的指定，因为Updates函数没有自动推断的能力
-	return obj.client.WithContext(ctx).Model(models.User{}).Where("id = ?", user.ID).Updates(&user).Error
+	return obj.client.WithContext(ctx).Model(&models.User{}).Where("id = ?", user.ID).Updates(&user).Error
 	// 使用Save的全量更新的简洁写法, 使用Save的时候Gorm会自动根据传入的model识别对应的数据库表名
 	// return obj.client.WithContext(ctx).Save(&user).Error
 }
